@@ -57,6 +57,13 @@ h1 {
   text-shadow: 1px 1px 0 rgb(0, 0, 0);
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
