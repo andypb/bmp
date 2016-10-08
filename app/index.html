@@ -40,24 +40,26 @@
 
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/">The Speech</a></li>
-              <li><a ng-href="#/">The Bucks Party</a></li>
-              <li><a ng-href="#/">The Wedding</a></li>
-              <li><a ng-href="#/">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+              <li><a ng-href="#/speech">The Speech</a></li>
+              <li><a ng-href="#/bucksparty">The Bucks Party</a></li>
+              <li><a ng-href="#/wedding">The Wedding</a></li>
+              <li><a ng-href="#/about">About</a></li>
+              <li><a ng-href="#/contact">Contact</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid men-image-container">
-      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-    </div>
+    <div ng-view></div>
+
+    <!--div class="container-fluid men-image-container">
+      <div ng-include="'js/home/main.html'" ng-controller="MainCtrl"></div>
+    </div-->
 
     <div class="footer">
       <div class="container-fluid">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon-heart"></span> from OpenClosed Solutions</p>
       </div>
     </div>
 
@@ -73,18 +75,19 @@
        ga('send', 'pageview');
     </script>
 
-    <!-- build:js(.) scripts/vendor.js -->
+    <!-- build:js(.) src/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <!-- build:js({.tmp,app}) src/src.js -->
+        <script src="src/app.js"></script>
+        <script src="src/home/main.js"></script>
         <!-- endbuild -->
 </body>
 </html>
