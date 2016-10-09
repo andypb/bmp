@@ -16,26 +16,26 @@ angular
 
         $routeProvider
             .when('/', {
-                templateUrl: 'src/home/main.html',
-                controller: 'MainCtrl'
+                templateUrl: 'src/home/home.html',
+                controller: 'HomeCtrl'
             })
-            .when('/joinus', {
-                template: '<h5>This is the join us route</h5>'
+            .when('/join', {
+                templateUrl: 'src/join/join.html'
             })
             .when('/speech', {
-                template: '<h5>This is the speech route</h5>'
+                templateUrl: 'src/speech/speech.html'
             })
             .when('/bucksparty', {
-                template: '<h5>This is the bucks party route</h5>'
+                templateUrl: 'src/bucksparty/bucksparty.html'
             })
             .when('/wedding', {
-                template: '<h5>This is the wedding party route</h5>'
+                templateUrl: 'src/wedding/wedding.html'
             })
             .when('/about', {
-                template: '<h5>This is the about route</h5>'
+                templateUrl: 'src/about/about.html'
             })
             .when('/contact', {
-                template: '<h5>This is the contact route</h5>'
+                templateUrl: 'src/contact/contact.html'
             })
             .otherwise({redirectTo: '/'});
     }]);
