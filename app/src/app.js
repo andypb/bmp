@@ -9,9 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('bestmanplanApp', [
-    'ngResource', 'ngRoute'
-  ])
+  .module('bestmanplanApp', ['ngResource', 'ngRoute', 'ngAnimate', 'ui.bootstrap'])
     .config(['$routeProvider', function($routeProvider) {
 
         $routeProvider
@@ -29,7 +27,9 @@ angular
                 templateUrl: 'src/bucksparty/bucksparty.html'
             })
             .when('/wedding', {
-                templateUrl: 'src/wedding/wedding.html'
+                templateUrl: 'src/wedding/wedding.html',
+                controller: 'WeddingCtrl',
+                controllerAs: 'wedding'
             })
             .when('/about', {
                 templateUrl: 'src/about/about.html'

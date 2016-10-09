@@ -8,10 +8,10 @@
  * Controller of the bestmanplanApp
  */
 angular.module('bestmanplanApp')
-  .controller('HomeCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+    .controller('HomeCtrl', function () {
+        this.awesomeThings = [
+            'HTML5 Boilerplate',
+            'AngularJS',
+            'Karma'
+        ];
+    });
