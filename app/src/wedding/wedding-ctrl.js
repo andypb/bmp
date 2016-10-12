@@ -1,22 +1,23 @@
 /**
  * Created by andyb on 09/10/2016.
  */
-(function() {
+//(function() {
     'use strict';
     angular.module('bestmanplanApp')
         .controller('WeddingCtrl', function () {
-
             var self = this;
             self.myInterval = 5000;
             self.noWrapSlides = false;
-            self.active = 0;
+            self.myActive = 0;
             var slides = self.slides = [];
             var currIndex = 0;
 
             self.addSlide = function () {
                 var newWidth = 600 + slides.length + 1;
                 slides.push({
-                    image: '//unsplash.it/' + newWidth + '/300',
+                    // http://lorempixel.com/400/200/food
+                    //image: '//unsplash.it/' + newWidth + '/300',
+                    image: '/images/radacina_men_in_black.svg.hi.png',
                     text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slides.length % 4],
                     id: currIndex++
                 });
@@ -62,4 +63,4 @@
                 return array;
             }
         })
-}());
+//}());

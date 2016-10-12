@@ -15,10 +15,13 @@ angular
         $routeProvider
             .when('/', {
                 templateUrl: 'src/home/home.html',
-                controller: 'HomeCtrl'
+                controller: 'HomeCtrl',
+                controllerAs: 'home'
             })
             .when('/join', {
-                templateUrl: 'src/join/join.html'
+                templateUrl: 'src/join/join.html',
+                controller: 'JoinCtrl',
+                controllerAs: 'join'
             })
             .when('/speech', {
                 templateUrl: 'src/speech/speech.html'

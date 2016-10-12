@@ -1,6 +1,6 @@
 <div class="container">
-    <!--div style="height: 305px">
-        <div uib-carousel active="{{wedding.active}}" interval="{{wedding.myInterval}}" no-wrap="{{wedding.noWrapSlides}}">
+    <div style="height: 305px">
+        <div uib-carousel active="myActive" interval="myInterval" no-wrap="noWrapSlides">
             <div uib-slide ng-repeat="slide in wedding.slides track by slide.id" index="slide.id">
                 <img ng-src="{{slide.image}}" style="margin:auto;">
                 <div class="carousel-caption">
@@ -9,7 +9,7 @@
                 </div>
             </div>
         </div>
-    </div-->
+    </div>
     <!--div uib-carousel active="2" interval='5000' no-wrap='false'>
         <div uib-slide>
             <img ng-src="images/radacina_men_in_black.svg.hi.png"  alt="Chania" width="600" height="410">
@@ -26,7 +26,7 @@
             </div>
         </div>
     </div-->
-    <div>
+    <!--div>
         <carousel interval="3000">
             <slide active="0">
                 <img ng-src="http://lorempixel.com/400/200/food">
@@ -36,7 +36,7 @@
                 </div>
             </slide>
         </carousel>
-    </div>
+    </div-->
     <!--div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <!--ol class="carousel-indicators">

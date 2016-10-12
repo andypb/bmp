@@ -14,4 +14,5 @@ angular.module('bestmanplanApp')
             'AngularJS',
             'Karma'
         ];
+        this.name= 'Andy Birchall';
     });
