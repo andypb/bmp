@@ -21,18 +21,20 @@ angular
             .when('/join', {
                 templateUrl: 'src/join/join.html',
                 controller: 'JoinCtrl',
-                controllerAs: 'join'
+                controllerAs: 'joinCtrl'
             })
             .when('/speech', {
-                templateUrl: 'src/speech/speech.html'
+                templateUrl: 'src/speech/speech.html',
+                controller: 'SpeechCtrl',
+                controllerAs: 'speech'
             })
             .when('/bucksparty', {
                 templateUrl: 'src/bucksparty/bucksparty.html'
             })
             .when('/wedding', {
                 templateUrl: 'src/wedding/wedding.html',
-                controller: 'WeddingCtrl',
-                controllerAs: 'wedding'
+                //controller: 'WeddingCtrl',
+                //controllerAs: 'wedding'
             })
             .when('/about', {
                 templateUrl: 'src/about/about.html'
