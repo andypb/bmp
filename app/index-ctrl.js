@@ -5,7 +5,7 @@ angular.module('bestmanplanApp')
         //var self = this;
         $scope.myInterval = 5000;
         $scope.noWrapSlides = false;
-        $scope.myActive = 0;
+        $scope.active = 0;
         var slides = $scope.slides = [];
         var currIndex = 0;
 

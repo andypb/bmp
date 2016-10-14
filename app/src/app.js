@@ -41,7 +41,8 @@ angular
             })
             .when('/contact', {
                 templateUrl: 'src/contact/contact.html',
-                controller: 'ContactCtrl'
+                controller: 'ContactCtrl',
+                //controllerAs: contact
             })
             .otherwise({redirectTo: '/'});
     }]);
