@@ -33,14 +33,15 @@ angular
             })
             .when('/wedding', {
                 templateUrl: 'src/wedding/wedding.html',
-                //controller: 'WeddingCtrl',
-                //controllerAs: 'wedding'
+                controller: 'WeddingCtrl',
+                controllerAs: 'wedding'
             })
             .when('/about', {
                 templateUrl: 'src/about/about.html'
             })
             .when('/contact', {
-                templateUrl: 'src/contact/contact.html'
+                templateUrl: 'src/contact/contact.html',
+                controller: 'ContactCtrl'
             })
             .otherwise({redirectTo: '/'});
     }]);

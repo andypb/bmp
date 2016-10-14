@@ -4,21 +4,21 @@
 //(function() {
     'use strict';
     angular.module('bestmanplanApp')
-        .controller('WeddingCtrl', function ($scope, $log) {
-            //var self = this;
-            $scope.myInterval = 5000;
-            $scope.noWrapSlides = false;
-            $scope.myActive = 0;
-            var slides = $scope.slides = [];
+        .controller('WeddingCtrl', ['$log', function ($log) {
+            var self = this;
+            self.myInterval = 5000;
+            self.noWrapSlides = false;
+            self.myActive = 0;
+            var slides = self.slides = [];
             var currIndex = 0;
 
-            $scope.addSlide = function () {
+            self.addSlide = function () {
                 var newWidth = 600 + slides.length + 1;
                 slides.push({
                     // http://lorempixel.com/400/200/food
                     //image: '//unsplash.it/' + newWidth + '/300',
                     //image: 'images/radacina_men_in_black.svg.hi.png',
-                    image: 'http://lorempixel.com/400/200/food',
+                    image: 'http://lorempixel.com/400/200/',
                     text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slides.length % 4],
                     id: currIndex++
                 });
@@ -26,13 +26,13 @@
                 $log.info('Hello');
             };
 
-            $scope.randomize = function () {
+            self.randomize = function () {
                 var indexes = generateIndexesArray();
                 assignNewIndexesToSlides(indexes);
             };
 
             for (var i = 0; i < 4; i++) {
-                addSlide();
+                self.addSlide();
             }
 
             // Randomize logic below
@@ -65,5 +65,5 @@
                 }
                 return array;
             }
-        });
+        }]);
 //}());
