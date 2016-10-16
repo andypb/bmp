@@ -1,0 +1,12 @@
+<table id="users-table" class="col-md-offset-3">
+    <tr>
+        <th>Name</th>
+        <th>Email Address</th>
+        <th>Date Joined</th>
+    </tr>
+    <tr ng-repeat="user in joinCtrl.userList">
+        <td>{{user.firstName}} {{user.lastName}}</td>
+        <td><a href="#/user-view/{{user.emailAddress}}">{{user.emailAddress}}</a></td>
+        <td>{{user.dateJoined}}</td>
+    </tr>
+</table>

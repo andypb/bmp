@@ -4,7 +4,7 @@
 (function() {
     'use strict';
     angular.module('bestmanplanApp')
-        .controller('WeddingCtrl', ['$log', function ($log) {
+        .controller('WeddingCtrl', ['$log', function($log) {
             var self = this;
             self.myInterval = 5000;
             self.noWrapSlides = false;

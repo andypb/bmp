@@ -1,1 +1,37 @@
-<h3>{{joinCtrl.title}}</h3>
+<div class="container">
+    <h4 class="col-md-offset-3">Enter your details to join the group!</h4>
+    <br><br>
+    <form name="joinCtrl.form" class="form-horizontal" ng-submit="joinCtrl.save()">
+        <div class="form-group">
+            <label for="firstName" class="col-md-3 control-label">First Name</label>
+            <div class="col-md-8">
+                <input id="firstName" type="text" class="form-control" name="firstName" placeholder="First Name"
+                       ng-model="joinCtrl.firstName" ng-trim required/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastName" class="col-md-3 control-label">Last Name</label>
+            <div class="col-md-8">
+                <input id="lastName" type="text" class="form-control" name="lastName" placeholder="Last Name"
+                       ng-model="joinCtrl.lastName" ng-trim required/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="emailAddress" class="col-md-3 control-label">Email Address</label>
+            <div class="col-md-8">
+                <input id="emailAddress" type="text" class="form-control" name="emailAddress"
+                       placeholder="Email Address" ng-model="joinCtrl.emailAddress" ng-trim required/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-3 col-md-10">
+                <button type="submit" class="btn btn-default">Save</button>
+                <a class="btn" href="#/home">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>
+<br><br>
+<div class="container">
+    <div ng-include="'src/join/partials/user-list.html'"></div>
+</div>
