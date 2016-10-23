@@ -18,12 +18,12 @@ angular.module('bestmanplanApp')
 
         self.save = function() {
             UserService.save(self.firstName, self.lastName, self.emailAddress);
-            self.clear();
+            clear();
         };
 
-        self.clear = function () {
+        function clear () {
             self.firstName = '';
             self.lastName = '';
             self.emailAddress = '';
-        };
+        }
     }]);

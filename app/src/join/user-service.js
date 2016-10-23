@@ -10,8 +10,14 @@
     function UserService() {
 
         var userList = [];
+        save('Andrew', 'Birchall', 'andy.birchall@gmail.com');
 
-        function save(firstName, lastName, emailAddress) {
+        return {
+            userList: userList,
+            save: save
+        };
+
+        function save (firstName, lastName, emailAddress) {
             userList.push(
                 {
                     firstName: firstName,
@@ -21,12 +27,5 @@
                 }
             );
         }
-
-        save('Andrew', 'Birchall', 'andy.birchall@gmail.com');
-
-        return {
-            save: save,
-            userList: userList
-        };
     }
 }());
