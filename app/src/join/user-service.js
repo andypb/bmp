@@ -3,11 +3,7 @@
  */
 (function () {
     'use strict';
-    angular
-        .module('bestmanplanApp')
-        .factory('UserService', UserService);
-
-    function UserService() {
+    angular.module('bestmanplanApp').factory('UserService', [function() {
 
         var userList = [];
         save('Andrew', 'Birchall', 'andy.birchall@gmail.com');
@@ -27,5 +23,5 @@
                 }
             );
         }
-    }
+    };
 }());
