@@ -12,5 +12,5 @@
  */
 angular.module('bestmanplanApp')
     .controller('SpeechCtrl', function () {
-        this.speech= 'This is my speech!!!!!!!!!!!!!!!!!!';
+        this.speech= 'Hello. This is my speech. Thank you.';
     });

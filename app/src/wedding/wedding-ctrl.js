@@ -10,9 +10,9 @@
             self.noWrapSlides = false;
             self.active = 0;
             var slides = self.slides = [];
-            var photos = ['rob_umberella','men_in_blue','group_church','ring','singing','family','threlthy','tina',
-                'bestman','rob_speech','rob_speech2','bestman_speech','cutting_cake','cutting_cake_argue','confetti',
-                'first_dance', 'wall_sit', 'walk'];
+            var photos = ['rob_umberella.jpg','men_in_blue.jpg','group_church.jpg','ring.jpg','singing.jpg','family.jpg','threlthy.jpg','tina.jpg',
+                'bestman.jpg','rob_speech.jpg','rob_speech2.jpg','bestman_speech.jpg','cutting_cake.jpg','cutting_cake_argue.jpg','confetti.jpg',
+                'first_dance.jpg', 'wall_sit.jpg', 'walk.jpg'];
             var currIndex = 0;
 
             self.addSlides = function () {
@@ -21,7 +21,7 @@
                     slides.push({
                         // http://lorempixel.com/400/200/food
                         //image: '//unsplash.it/' + newWidth + '/300',
-                        image: 'images/' + photos[i] + '.jpg',
+                        image: 'images/' + photos[i],
                         //image: 'http://lorempixel.com/400/200/',
                         text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slides.length % 4],
                         id: i
